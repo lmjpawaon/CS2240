@@ -3224,8 +3224,9 @@ textarea.form-control-lg {
 
 .btn-light {
   font-weight: bold;
-  color: #251342;
-  background-color: #FFFFFF;
+  font-size: 10px;
+  color: #fff;
+  background-color: #251342;
 }
 .btn-light:hover {
   color: #000;
@@ -3496,7 +3497,7 @@ textarea.form-control-lg {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 14px;
   border-radius: 0.3rem;
 }
 
