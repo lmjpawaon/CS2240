@@ -238,7 +238,7 @@ sup {
 
 a {
   color: #bd5d38;
-  text-decoration: underline;
+  
 }
 a:hover {
   color: #974a2d;
@@ -248,7 +248,19 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
+.marketplaceLink:link,.marketplaceLink:visited  {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 
+.marketplaceLink:hover, .marketplaceLink:active{
+  background-color: #251342;
+  color: white;
+}
 pre,
 code,
 kbd,
@@ -3211,9 +3223,9 @@ textarea.form-control-lg {
 }
 
 .btn-light {
-  color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  font-weight: bold;
+  color: #251342;
+  background-color: #FFFFFF;
 }
 .btn-light:hover {
   color: #000;
@@ -11432,4 +11444,39 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+.contain {
+  position: relative;
+  width: 100%;
+}
+.chammie {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#btnChammie {
+  font-size: 12px;
+  padding: 16px 32px;
+  justify-content: center;
+}
+.card:hover .chammie {
+  opacity: 0.3;
+}
+
+.card:hover .middle {
+  opacity: 1;
 }
